@@ -333,3 +333,102 @@ h1::after {
     text-align: center;
   }
 }
+
+/* MAIN */
+.shot-container {
+  flex: 1;
+  padding: 24px 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* GRID SCREENSHOT */
+.grid-shot {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per riga su PC */
+  gap: 20px;
+}
+
+/* 1 per riga su mobile */
+@media (max-width: 600px) {
+  .grid-shot {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARD SCREENSHOT */
+.shot-card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.shot-card h2 {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #0d2b45;
+}
+
+.shot-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* MAIN */
+.group-container {
+  flex: 1;
+  padding: 24px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* GRID PROFILI */
+.grid-group {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 per riga */
+  gap: 16px;
+}
+
+/* 4 per riga */
+@media (max-width: 1200px) {
+  .grid-group {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 2 per riga */
+@media (max-width: 800px) {
+  .grid-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* CARD PROFILO */
+.card-profile {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.avatar {
+  font-size: 48px;   /* icona profilo */
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #0d2b45;
+}
