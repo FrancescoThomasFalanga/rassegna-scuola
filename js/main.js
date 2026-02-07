@@ -12,7 +12,30 @@ mesiToggle.addEventListener("click", function (e) {
 
 const hamburgerBtn = document.getElementById("hamburgerBtn");
 const navMenu = document.getElementById("navMenu");
+const overlay = document.getElementById("overlay");
 
 hamburgerBtn.addEventListener("click", function () {
   navMenu.classList.toggle("show");
+  overlay.classList.toggle("show");
+
+  // Cambia icona ☰ <-> ✖
+  if (navMenu.classList.contains("show")) {
+    hamburgerBtn.textContent = "✖";
+  } else {
+    hamburgerBtn.textContent = "☰";
+  }
 });
+
+// Chiudi menu cliccando sull'overlay
+overlay.addEventListener("click", closeMenu);
+
+// Chiudi menu quando clicchi un link
+document.querySelectorAll("#navMenu a").forEach(link => {
+  link.addEventListener("click", closeMenu);
+});
+
+function closeMenu() {
+  navMenu.classList.remove("show");
+  overlay.classList.remove("show");
+  hamburgerBtn.textContent = "☰";
+}
