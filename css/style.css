@@ -67,18 +67,24 @@
       top: 100%;
       left: 0;
       background-color: #0d2b45;
-      min-width: 120px;
+      min-width: 180px;
       border-radius: 6px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       z-index: 1000;
+      padding: 6px 0;
     }
 
     .dropdown-content a {
-      padding: 10px;
+      padding: 12px 18px;   /* 👈 più spazio verticale */
       white-space: nowrap;
+      display: block;
     }
 
     .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content.show {
       display: block;
     }
 
@@ -147,6 +153,11 @@
 
       .dropdown:hover .dropdown-content {
         display: block;
+      }
+
+      .dropdown-content {
+        position: static;
+        box-shadow: none;
       }
 
       .home-container h1 {
