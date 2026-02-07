@@ -8,3 +8,11 @@ mesiToggle.addEventListener("click", function (e) {
   }
   console.log("PREMUTO");
 });
+
+
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const navMenu = document.getElementById("navMenu");
+
+hamburgerBtn.addEventListener("click", function () {
+  navMenu.classList.toggle("show");
+});
