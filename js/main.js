@@ -29,11 +29,6 @@ hamburgerBtn.addEventListener("click", function () {
 // Chiudi menu cliccando sull'overlay
 overlay.addEventListener("click", closeMenu);
 
-// Chiudi menu quando clicchi un link
-document.querySelectorAll("#navMenu a").forEach(link => {
-  link.addEventListener("click", closeMenu);
-});
-
 function closeMenu() {
   navMenu.classList.remove("show");
   overlay.classList.remove("show");
