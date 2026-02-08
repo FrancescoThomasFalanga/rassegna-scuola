@@ -73,7 +73,7 @@ if ($conn->connect_error) {
           <div class="card">
             <div class="pdf-icon">📄</div>
             <div class="date"><?php echo $data; ?></div>
-            <div class="buttons">
+            <div class="card-buttons">
               <a class="btn view" href="../pdf/<?php echo $file; ?>" target="_blank">Visualizza</a>
               <a class="btn download" href="../pdf/<?php echo $file; ?>" download>Scarica</a>
             </div>
@@ -92,7 +92,7 @@ if ($conn->connect_error) {
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Scuola Allievi Agenti Brescia - Rassegna Stampa</p>
+    <p>© 2026 Scuola Allievi Agenti Brescia - Rassegna Stampa By Francesco Thomas Falanga</p>
   </footer>
 </body>
     <script src="../js/main.js"></script>
