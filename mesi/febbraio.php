@@ -62,7 +62,7 @@ if ($conn->connect_error) {
 
     <div class="grid">
       <?php
-      $sql = "SELECT * FROM rassegne WHERE data LIKE '%Febbraio%' ORDER BY id DESC";
+      $sql = "SELECT * FROM rassegne WHERE data LIKE '%Febbraio%' ORDER BY id ASC";
       $result = $conn->query($sql);
 
       if ($result->num_rows > 0) {
