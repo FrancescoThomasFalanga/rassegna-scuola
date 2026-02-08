@@ -35,19 +35,20 @@ if ($conn->connect_error) {
           <li class="dropdown">
             <a href="#" id="mesiToggle">Mesi ▾</a>
             <div class="dropdown-content" id="mesiMenu">
-              <a href="febbraio.html">Febbraio</a>
-              <a href="marzo.html">Marzo</a>
-              <a href="aprile.html">Aprile</a>
-              <a href="maggio.html">Maggio</a>
-              <a href="giugno.html">Giugno</a>
-              <a href="luglio.html">Luglio</a>
-              <a href="agosto.html">Agosto</a>
+              <a href="febbraio.php">Febbraio</a>
+              <a href="marzo.php">Marzo</a>
+              <a href="aprile.php">Aprile</a>
+              <a href="maggio.php">Maggio</a>
+              <a href="giugno.php">Giugno</a>
+              <a href="luglio.php">Luglio</a>
+              <a href="agosto.php">Agosto</a>
             </div>
           </li>
 
           <li><a href="../pages/info.html">Info</a></li>
           <li><a href="../pages/gruppo.html">Gruppo</a></li>
           <li><a href="../pages/turni.html">Turni</a></li>
+          <li><a href="../admin.php" class="admin-link">AGGIUNGI</a></li>
         </ul>
       </nav>
       <div class="nav-title">RASSEGNA STAMPA</div>

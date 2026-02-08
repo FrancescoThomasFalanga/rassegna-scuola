@@ -13,6 +13,15 @@ body {
   color: #222;
 }
 
+nav .admin-link {
+  color: red;
+  font-weight: bold;
+}
+
+nav .admin-link:hover {
+  color: rgb(249, 70, 70);
+}
+
 /* NAVBAR */
 header {
   background-color: #0d2b45;
